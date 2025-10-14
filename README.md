@@ -1,4 +1,25 @@
+Live demo: https://leiding01.github.io/fsm-educational-tool/
+
+Focus: Minimal, reproducible educational tool. Planned: NFA + ε-closure and subset construction; keyboard shortcuts; tutorial mode.
+
 # FSM Educational Tool — DFA (v0.2)
+
+**Highlights (engineering-focused)**
+- Deterministic finite automata (DFA) visualiser: **trace panel**, **delete state**, **Undo**, **preview canvas** with **Export PNG**, **JSON import/export**.
+- Defensive UI: prevents duplicate `(state, symbol)` transitions; clear error messages (e.g. missing δ-transition).
+- Reproducible set-up: one‐click local server scripts, example models, black-box tests, timing CSV, and a Nielsen heuristic checklist.
+- Clean, dependency-free front-end (HTML/JS/CSS) that runs locally and on GitHub Pages.
+
+**Roadmap (v0.3 – planned, small and safe)**
+- NFA support with **ε-closure**, plus **subset construction** view (NFA⇢DFA).
+- **Redo** and keyboard shortcuts (Ctrl+Z, Del, Enter), lightweight toast notifications.
+- One-click **export ZIP** (current JSON + PNG preview).
+- Small test pack (≈10 JSON models) + batch runner for timing.
+
+**Evaluation & reproducibility**
+- Black-box examples in `examples/`, test notes in `tests/spec_fsm_core.md`.
+- Timing sheet: `eval/fsm_timing.csv`; usability checklist: `eval/nielsen_checklist.md`.
+- Figures/screenshots in `report/figures/` (used as evidence in the checklist).
 
 A minimal, teaching-oriented web tool to build and run deterministic finite automata (DFA).  
 This version adds a **trace panel**, **delete state**, a simple **Undo**, and a **preview canvas with PNG export**.
@@ -36,6 +57,9 @@ This version adds a **trace panel**, **delete state**, a simple **Undo**, and a 
 - The preview uses a simple circular layout; it is sufficient for small to medium graphs.
 - Self-loops are drawn above the state; multiple symbols between two states are merged with comma-separated labels.
 - No personal data are collected; examples are synthetic.
+
+[![Live demo](https://img.shields.io/badge/demo-GitHub%20Pages-blue)](https://leiding01.github.io/fsm-educational-tool/)
+
 
 ## Student
 - Name: Lei Ding
