@@ -1,0 +1,46 @@
+{
+  "type": "MutexState",
+  "algorithm": "RA",
+  "mode": "interactive",
+  "processes": [
+    {
+      "id": "P2",
+      "requesting": false,
+      "inCS": false,
+      "crashed": false,
+      "clock": 5,
+      "reqTs": null,
+      "awaiting": [],
+      "deferred": []
+    },
+    {
+      "id": "P10",
+      "requesting": false,
+      "inCS": false,
+      "crashed": false,
+      "clock": 6,
+      "reqTs": null,
+      "awaiting": [],
+      "deferred": []
+    }
+  ],
+  "ring": [
+    "P2",
+    "P10"
+  ],
+  "network": {
+    "nextMsgId": 5,
+    "dropNextSend": false,
+    "queue": []
+  },
+  "derived": {
+    "inCS": null,
+    "metrics": {
+      "csEntries": 2,
+      "csReleases": 2,
+      "messagesSent": 4,
+      "messagesDelivered": 4,
+      "messagesDropped": 0
+    }
+  }
+}

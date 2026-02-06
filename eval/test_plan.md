@@ -14,7 +14,7 @@ It is designed to support:
 
 - Browser: Chrome / Edge latest (desktop).
 - Local server: `python -m http.server 5500` (or VS Code Live Server).
-- URL: `http://localhost:5500/ds-mutex/index.html`
+- URL: `http://localhost:5500/`
 - Run speed: 350ms (default) unless stated.
 
 ---

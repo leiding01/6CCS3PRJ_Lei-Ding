@@ -1,0 +1,12 @@
+Distributed Mutual Exclusion Explorer
+Algorithm: RA
+Mode: interactive
+Export session: 2026-02-01T22-18-02-161Z
+Export time: 2026-02-01T22:19:02.286Z
+[001]  P1 broadcasts REQUEST(ts=1) to 3 processes.
+[002]  P2 sends REPLY to P1.
+[003]  P3 sends REPLY to P1.
+[004]! Fault injected: dropped REQUEST #3 P1 -> P4.
+[005]  P1 receives REPLY from P2 (2 remaining).
+[006]  P1 receives REPLY from P3 (1 remaining).
+[007]! Stalled: P1 is waiting for REPLY from P4.
